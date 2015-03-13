@@ -15,12 +15,10 @@
  * limitations under the License.
  */
 /*jshint globalstrict: false */
-/* globals PDFJS */
 
-// Initializing PDFJS global object (if still undefined)
-if (typeof PDFJS === 'undefined') {
-  (typeof window !== 'undefined' ? window : this).PDFJS = {};
-}
+// Create CommonJS Module
+var PDFJS = {};
+module.exports = PDFJS;
 
 PDFJS.version = '1.0.1203';
 PDFJS.build = 'ac5d1fb';
